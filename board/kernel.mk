@@ -7,7 +7,7 @@
 #	ehci-hcd.park=3 \
 #	androidboot.bootdevice=7824900.sdhci
 
-BOARD_KERNEL_CMDLINE := selinux=0
+BOARD_KERNEL_CMDLINE += selinux=0
 
 BOARD_CUSTOM_BOOTIMG_MK := $(PLATFORM_PATH)/mkbootimg.mk
 BOARD_DTBTOOL_ARGS := -2
