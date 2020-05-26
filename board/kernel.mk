@@ -1,6 +1,6 @@
 # Kernel
 BOARD_KERNEL_CMDLINE += \
-  selinux=0 \
+        androidboot.selinux=permissive \
 	console=null \
 	androidboot.hardware=qcom \
 	user_debug=23 \
