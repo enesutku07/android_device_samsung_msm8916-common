@@ -1,13 +1,13 @@
 # Kernel
-#BOARD_KERNEL_CMDLINE += \
-#	console=null \
-#	androidboot.hardware=qcom \
-#	user_debug=23 \
-#	msm_rtb.filter=0x3F \
-#	ehci-hcd.park=3 \
-#	androidboot.bootdevice=7824900.sdhci
+BOARD_KERNEL_CMDLINE += \
+  selinux=0 \
+	console=null \
+	androidboot.hardware=qcom \
+	user_debug=23 \
+	msm_rtb.filter=0x3F \
+	ehci-hcd.park=3 \
+	androidboot.bootdevice=7824900.sdhci
 
-BOARD_KERNEL_CMDLINE += selinux=0
 
 BOARD_CUSTOM_BOOTIMG_MK := $(PLATFORM_PATH)/mkbootimg.mk
 BOARD_DTBTOOL_ARGS := -2
